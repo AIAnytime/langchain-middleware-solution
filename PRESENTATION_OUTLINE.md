@@ -1,7 +1,5 @@
 # LangChain v1.0 Middleware: Presentation Outline
 
-## Part 1: The Problem (3 minutes)
-
 ### Slide 1: Pre-v1.0 Reality
 "Anyone who built AI agents has faced these challenges..."
 
