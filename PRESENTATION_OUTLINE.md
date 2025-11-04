@@ -1,11 +1,5 @@
 # LangChain v1.0 Middleware: Presentation Outline
 
-## Presentation Flow for AI Engineers
-
-### Duration: 15-20 minutes
-
----
-
 ## Part 1: The Problem (3 minutes)
 
 ### Slide 1: Pre-v1.0 Reality
@@ -341,39 +335,3 @@ class CustomMiddleware:
 ```
 
 ---
-
-## Presentation Success Metrics
-
-**Audience should leave understanding:**
-1. What middleware is
-2. Why it matters
-3. How to use it
-4. Where to apply it
-
-**Audience should be able to:**
-1. Explain the middleware pattern
-2. Identify use cases
-3. Create basic middleware
-4. Compose middleware stacks
-
----
-
-## Follow-up Resources
-
-**Share with audience:**
-- GitHub repository link
-- README with full documentation
-- QUICK_START guide
-- Test suite for practice
-
-**Additional Learning:**
-- LangChain v1.0 docs
-- FastAPI middleware (pattern origin)
-- Production AI agent patterns
-- Context engineering principles
-
----
-
-**Presentation prepared for AI Engineers and Developers**
-**Focus: Practical understanding + hands-on demonstration**
-**Style: Professional, technical, example-driven**
