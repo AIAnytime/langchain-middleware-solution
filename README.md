@@ -31,7 +31,7 @@ Each middleware in the stack can intercept and modify the flow at specific point
 - `wrap_tool_call`: Control tool access
 - `after_model`: Post-process outputs
 
-![Graphviz Diagram](./graphviz-15.svg)
+![Graphviz Diagram](./graphviz%20%2815%29.svg)
 
 ## Project Structure
 
