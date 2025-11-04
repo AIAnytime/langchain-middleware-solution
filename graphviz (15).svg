@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="241pt" height="1010pt" viewBox="0.00 0.00 241.00 1010.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1006.04)">
+<title>MiddlewareArchitecture</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-1006.04 237,-1006.04 237,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_before</title>
+<polygon fill="#f5f5f5" stroke="black" points="16,-539.2 16,-912 225,-912 225,-539.2 16,-539.2"/>
+<text xml:space="preserve" text-anchor="middle" x="120.5" y="-895.4" font-family="Times,serif" font-size="14.00">Middleware Stack (Before Model)</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_after</title>
+<polygon fill="#f5f5f5" stroke="black" points="8,-76 8,-446.4 208,-446.4 208,-76 8,-76"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-429.8" font-family="Times,serif" font-size="14.00">Middleware Stack (After Model)</text>
+</g>
+<!-- user -->
+<g id="node1" class="node">
+<title>user</title>
+<ellipse fill="#ffeb3b" stroke="black" cx="108" cy="-976.02" rx="80.63" ry="26.02"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-979.62" font-family="Arial" font-size="12.00">User Input</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-965.22" font-family="Arial" font-size="12.00">(Question/Prompt)</text>
+</g>
+<!-- mw1 -->
+<g id="node2" class="node">
+<title>mw1</title>
+<path fill="#4caf50" stroke="black" d="M168.69,-879.2C168.69,-879.2 47.31,-879.2 47.31,-879.2 41.31,-879.2 35.31,-873.2 35.31,-867.2 35.31,-867.2 35.31,-854.4 35.31,-854.4 35.31,-848.4 41.31,-842.4 47.31,-842.4 47.31,-842.4 168.69,-842.4 168.69,-842.4 174.69,-842.4 180.69,-848.4 180.69,-854.4 180.69,-854.4 180.69,-867.2 180.69,-867.2 180.69,-873.2 174.69,-879.2 168.69,-879.2"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-864.4" font-family="Arial" font-size="12.00">1. Logging Middleware</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-850" font-family="Arial" font-size="12.00">Track timestamp &amp; input</text>
+</g>
+<!-- user&#45;&gt;mw1 -->
+<g id="edge9" class="edge">
+<title>user-&gt;mw1</title>
+<path fill="none" stroke="black" stroke-width="2" d="M108,-949.61C108,-932.15 108,-908.94 108,-890.76"/>
+<polygon fill="black" stroke="black" stroke-width="2" points="111.5,-892.41 108,-882.41 104.5,-892.41 111.5,-892.41"/>
+<text xml:space="preserve" text-anchor="middle" x="119.4" y="-923" font-family="Arial" font-size="10.00">enter</text>
+</g>
+<!-- mw2 -->
+<g id="node3" class="node">
+<title>mw2</title>
+<path fill="#ff9800" stroke="black" d="M147.34,-805.4C147.34,-805.4 68.66,-805.4 68.66,-805.4 62.66,-805.4 56.66,-799.4 56.66,-793.4 56.66,-793.4 56.66,-780.6 56.66,-780.6 56.66,-774.6 62.66,-768.6 68.66,-768.6 68.66,-768.6 147.34,-768.6 147.34,-768.6 153.34,-768.6 159.34,-774.6 159.34,-780.6 159.34,-780.6 159.34,-793.4 159.34,-793.4 159.34,-799.4 153.34,-805.4 147.34,-805.4"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-790.6" font-family="Arial" font-size="12.00">2. Security Filter</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-776.2" font-family="Arial" font-size="12.00">Redact PII</text>
+</g>
+<!-- mw1&#45;&gt;mw2 -->
+<g id="edge1" class="edge">
+<title>mw1-&gt;mw2</title>
+<path fill="none" stroke="black" d="M108,-842.05C108,-834.49 108,-825.46 108,-816.98"/>
+<polygon fill="black" stroke="black" points="111.5,-817.06 108,-807.06 104.5,-817.06 111.5,-817.06"/>
+</g>
+<!-- mw3 -->
+<g id="node4" class="node">
+<title>mw3</title>
+<path fill="#2196f3" stroke="black" d="M149.01,-731.6C149.01,-731.6 66.99,-731.6 66.99,-731.6 60.99,-731.6 54.99,-725.6 54.99,-719.6 54.99,-719.6 54.99,-706.8 54.99,-706.8 54.99,-700.8 60.99,-694.8 66.99,-694.8 66.99,-694.8 149.01,-694.8 149.01,-694.8 155.01,-694.8 161.01,-700.8 161.01,-706.8 161.01,-706.8 161.01,-719.6 161.01,-719.6 161.01,-725.6 155.01,-731.6 149.01,-731.6"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-716.8" font-family="Arial" font-size="12.00">3. Token Budget</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-702.4" font-family="Arial" font-size="12.00">Check cost limits</text>
+</g>
+<!-- mw2&#45;&gt;mw3 -->
+<g id="edge2" class="edge">
+<title>mw2-&gt;mw3</title>
+<path fill="none" stroke="black" d="M108,-768.25C108,-760.69 108,-751.66 108,-743.18"/>
+<polygon fill="black" stroke="black" points="111.5,-743.26 108,-733.26 104.5,-743.26 111.5,-743.26"/>
+</g>
+<!-- mw4 -->
+<g id="node5" class="node">
+<title>mw4</title>
+<path fill="#9c27b0" stroke="black" d="M173.03,-657.8C173.03,-657.8 42.97,-657.8 42.97,-657.8 36.97,-657.8 30.97,-651.8 30.97,-645.8 30.97,-645.8 30.97,-633 30.97,-633 30.97,-627 36.97,-621 42.97,-621 42.97,-621 173.03,-621 173.03,-621 179.03,-621 185.03,-627 185.03,-633 185.03,-633 185.03,-645.8 185.03,-645.8 185.03,-651.8 179.03,-657.8 173.03,-657.8"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-643" font-family="Arial" font-size="12.00">4. Context Summarization</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-628.6" font-family="Arial" font-size="12.00">Condense history</text>
+</g>
+<!-- mw3&#45;&gt;mw4 -->
+<g id="edge3" class="edge">
+<title>mw3-&gt;mw4</title>
+<path fill="none" stroke="black" d="M108,-694.45C108,-686.89 108,-677.86 108,-669.38"/>
+<polygon fill="black" stroke="black" points="111.5,-669.46 108,-659.46 104.5,-669.46 111.5,-669.46"/>
+</g>
+<!-- mw5 -->
+<g id="node6" class="node">
+<title>mw5</title>
+<path fill="#00bcd4" stroke="black" d="M154.69,-584C154.69,-584 61.31,-584 61.31,-584 55.31,-584 49.31,-578 49.31,-572 49.31,-572 49.31,-559.2 49.31,-559.2 49.31,-553.2 55.31,-547.2 61.31,-547.2 61.31,-547.2 154.69,-547.2 154.69,-547.2 160.69,-547.2 166.69,-553.2 166.69,-559.2 166.69,-559.2 166.69,-572 166.69,-572 166.69,-578 160.69,-584 154.69,-584"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-569.2" font-family="Arial" font-size="12.00">5. Expertise-Based</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-554.8" font-family="Arial" font-size="12.00">Inject prompt</text>
+</g>
+<!-- mw4&#45;&gt;mw5 -->
+<g id="edge4" class="edge">
+<title>mw4-&gt;mw5</title>
+<path fill="none" stroke="black" d="M108,-620.65C108,-613.09 108,-604.06 108,-595.58"/>
+<polygon fill="black" stroke="black" points="111.5,-595.66 108,-585.66 104.5,-595.66 111.5,-595.66"/>
+</g>
+<!-- model -->
+<g id="node7" class="node">
+<title>model</title>
+<polygon fill="#673ab7" stroke="black" points="164.35,-510.2 55.65,-510.2 51.65,-506.2 51.65,-473.4 160.35,-473.4 164.35,-477.4 164.35,-510.2"/>
+<polyline fill="none" stroke="black" points="160.35,-506.2 51.65,-506.2"/>
+<polyline fill="none" stroke="black" points="160.35,-506.2 160.35,-473.4"/>
+<polyline fill="none" stroke="black" points="160.35,-506.2 164.35,-510.2"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-495.4" font-family="Arial" font-size="12.00" fill="white">AI Model</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-481" font-family="Arial" font-size="12.00" fill="white">(OpenAI / Gemini)</text>
+</g>
+<!-- mw5&#45;&gt;model -->
+<g id="edge10" class="edge">
+<title>mw5-&gt;model</title>
+<path fill="none" stroke="black" stroke-width="2" d="M108,-546.85C108,-539.29 108,-530.26 108,-521.78"/>
+<polygon fill="black" stroke="black" stroke-width="2" points="111.5,-523.37 108,-513.37 104.5,-523.37 111.5,-523.37"/>
+</g>
+<!-- mw5_after -->
+<g id="node8" class="node">
+<title>mw5_after</title>
+<path fill="#00bcd4" stroke="black" d="M154.69,-413.6C154.69,-413.6 61.31,-413.6 61.31,-413.6 55.31,-413.6 49.31,-407.6 49.31,-401.6 49.31,-401.6 49.31,-389.6 49.31,-389.6 49.31,-383.6 55.31,-377.6 61.31,-377.6 61.31,-377.6 154.69,-377.6 154.69,-377.6 160.69,-377.6 166.69,-383.6 166.69,-389.6 166.69,-389.6 166.69,-401.6 166.69,-401.6 166.69,-407.6 160.69,-413.6 154.69,-413.6"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-392" font-family="Arial" font-size="12.00">5. Expertise-Based</text>
+</g>
+<!-- model&#45;&gt;mw5_after -->
+<g id="edge11" class="edge">
+<title>model-&gt;mw5_after</title>
+<path fill="none" stroke="black" stroke-width="2" d="M108,-473.08C108,-459.58 108,-440.7 108,-425.09"/>
+<polygon fill="black" stroke="black" stroke-width="2" points="111.5,-426.95 108,-416.95 104.5,-426.95 111.5,-426.95"/>
+</g>
+<!-- mw4_after -->
+<g id="node9" class="node">
+<title>mw4_after</title>
+<path fill="#9c27b0" stroke="black" d="M173.03,-340.6C173.03,-340.6 42.97,-340.6 42.97,-340.6 36.97,-340.6 30.97,-334.6 30.97,-328.6 30.97,-328.6 30.97,-316.6 30.97,-316.6 30.97,-310.6 36.97,-304.6 42.97,-304.6 42.97,-304.6 173.03,-304.6 173.03,-304.6 179.03,-304.6 185.03,-310.6 185.03,-316.6 185.03,-316.6 185.03,-328.6 185.03,-328.6 185.03,-334.6 179.03,-340.6 173.03,-340.6"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-319" font-family="Arial" font-size="12.00">4. Context Summarization</text>
+</g>
+<!-- mw5_after&#45;&gt;mw4_after -->
+<g id="edge5" class="edge">
+<title>mw5_after-&gt;mw4_after</title>
+<path fill="none" stroke="black" d="M108,-377.41C108,-369.83 108,-360.7 108,-352.14"/>
+<polygon fill="black" stroke="black" points="111.5,-352.14 108,-342.14 104.5,-352.14 111.5,-352.14"/>
+</g>
+<!-- mw3_after -->
+<g id="node10" class="node">
+<title>mw3_after</title>
+<path fill="#2196f3" stroke="black" d="M148.03,-267.6C148.03,-267.6 67.97,-267.6 67.97,-267.6 61.97,-267.6 55.97,-261.6 55.97,-255.6 55.97,-255.6 55.97,-242.8 55.97,-242.8 55.97,-236.8 61.97,-230.8 67.97,-230.8 67.97,-230.8 148.03,-230.8 148.03,-230.8 154.03,-230.8 160.03,-236.8 160.03,-242.8 160.03,-242.8 160.03,-255.6 160.03,-255.6 160.03,-261.6 154.03,-267.6 148.03,-267.6"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-252.8" font-family="Arial" font-size="12.00">3. Token Budget</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-238.4" font-family="Arial" font-size="12.00">Update usage</text>
+</g>
+<!-- mw4_after&#45;&gt;mw3_after -->
+<g id="edge6" class="edge">
+<title>mw4_after-&gt;mw3_after</title>
+<path fill="none" stroke="black" d="M108,-304.32C108,-296.85 108,-287.91 108,-279.47"/>
+<polygon fill="black" stroke="black" points="111.5,-279.58 108,-269.58 104.5,-279.58 111.5,-279.58"/>
+</g>
+<!-- mw2_after -->
+<g id="node11" class="node">
+<title>mw2_after</title>
+<path fill="#ff9800" stroke="black" d="M147.34,-193.8C147.34,-193.8 68.66,-193.8 68.66,-193.8 62.66,-193.8 56.66,-187.8 56.66,-181.8 56.66,-181.8 56.66,-169.8 56.66,-169.8 56.66,-163.8 62.66,-157.8 68.66,-157.8 68.66,-157.8 147.34,-157.8 147.34,-157.8 153.34,-157.8 159.34,-163.8 159.34,-169.8 159.34,-169.8 159.34,-181.8 159.34,-181.8 159.34,-187.8 153.34,-193.8 147.34,-193.8"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-172.2" font-family="Arial" font-size="12.00">2. Security Filter</text>
+</g>
+<!-- mw3_after&#45;&gt;mw2_after -->
+<g id="edge7" class="edge">
+<title>mw3_after-&gt;mw2_after</title>
+<path fill="none" stroke="black" d="M108,-230.55C108,-223.03 108,-214.05 108,-205.62"/>
+<polygon fill="black" stroke="black" points="111.5,-205.76 108,-195.76 104.5,-205.76 111.5,-205.76"/>
+</g>
+<!-- mw1_after -->
+<g id="node12" class="node">
+<title>mw1_after</title>
+<path fill="#4caf50" stroke="black" d="M164.37,-120.8C164.37,-120.8 51.63,-120.8 51.63,-120.8 45.63,-120.8 39.63,-114.8 39.63,-108.8 39.63,-108.8 39.63,-96 39.63,-96 39.63,-90 45.63,-84 51.63,-84 51.63,-84 164.37,-84 164.37,-84 170.37,-84 176.37,-90 176.37,-96 176.37,-96 176.37,-108.8 176.37,-108.8 176.37,-114.8 170.37,-120.8 164.37,-120.8"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-106" font-family="Arial" font-size="12.00">1. Logging Middleware</text>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-91.6" font-family="Arial" font-size="12.00">Log response</text>
+</g>
+<!-- mw2_after&#45;&gt;mw1_after -->
+<g id="edge8" class="edge">
+<title>mw2_after-&gt;mw1_after</title>
+<path fill="none" stroke="black" d="M108,-157.52C108,-150.05 108,-141.11 108,-132.67"/>
+<polygon fill="black" stroke="black" points="111.5,-132.78 108,-122.78 104.5,-132.78 111.5,-132.78"/>
+</g>
+<!-- output -->
+<g id="node13" class="node">
+<title>output</title>
+<ellipse fill="#4caf50" stroke="black" cx="108" cy="-18" rx="63.47" ry="18"/>
+<text xml:space="preserve" text-anchor="middle" x="108" y="-14.4" font-family="Arial" font-size="12.00">Final Response</text>
+</g>
+<!-- mw1_after&#45;&gt;output -->
+<g id="edge12" class="edge">
+<title>mw1_after-&gt;output</title>
+<path fill="none" stroke="black" stroke-width="2" d="M108,-83.52C108,-73.01 108,-59.49 108,-47.54"/>
+<polygon fill="black" stroke="black" stroke-width="2" points="111.5,-49.31 108,-39.31 104.5,-49.31 111.5,-49.31"/>
+<text xml:space="preserve" text-anchor="middle" x="115.78" y="-57" font-family="Arial" font-size="10.00">exit</text>
+</g>
+</g>
+</svg>
